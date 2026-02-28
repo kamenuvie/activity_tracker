@@ -4,6 +4,7 @@ namespace App\Providers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Force HTTPS in production
+        if (app()->isProduction()) {
+            URL::forceScheme('https');
+        }
+
         // Performance: Prevent lazy loading in development to catch N+1 queries
         Model::preventLazyLoading(! app()->isProduction());
 
