@@ -284,71 +284,156 @@
     </div>
 
     <!-- Features Section -->
-    <div class="bg-gradient-to-br from-gray-50 via-white to-nss-green-50 py-20">
+    <div class="bg-gradient-to-br from-gray-50 via-white to-nss-green-50 py-24 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Powerful Features</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Everything you need to manage and track activities efficiently</p>
+            <div class="text-center mb-20 animate-fade-in">
+                <h2 class="text-5xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-nss-green-600 to-nss-yellow-600 bg-clip-text text-transparent">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Everything you need to manage and track activities efficiently with cutting-edge tools</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- First Row - 2 Cards Centered -->
+            <div class="flex flex-wrap justify-center gap-8 mb-8 max-w-5xl mx-auto">
                 <!-- Feature Card 1 -->
-                <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-green-100 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-nss-green-500 to-nss-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                        </svg>
+                <div class="group relative w-full md:w-[calc(50%-1rem)] bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-nss-green-100 hover:border-nss-green-300 transform hover:-translate-y-3 hover:scale-105 overflow-hidden animate-slide-up" style="animation-delay: 0.1s;">
+                    <!-- Animated gradient background -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-nss-green-50/50 via-transparent to-nss-yellow-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <!-- Floating particles effect -->
+                    <div class="absolute top-4 right-4 w-20 h-20 bg-nss-yellow-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="absolute bottom-4 left-4 w-16 h-16 bg-nss-green-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 delay-100"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-nss-green-500 via-nss-green-600 to-nss-green-700 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl group-hover:shadow-nss-green-500/50">
+                            <svg class="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-nss-green-600 transition-colors duration-300">Activity Management</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">Create, edit, and organize activities with detailed descriptions, assignees, and priority levels for better workflow management.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Activity Management</h3>
-                    <p class="text-gray-600 leading-relaxed">Create, edit, and organize activities with detailed descriptions, assignees, and priority levels for better workflow management.</p>
+                    
+                    <!-- Animated corner accent -->
+                    <div class="absolute -top-2 -right-2 w-24 h-24 bg-gradient-to-br from-nss-green-400 to-nss-yellow-400 opacity-0 group-hover:opacity-20 rounded-full blur-xl transition-all duration-500 group-hover:scale-150"></div>
                 </div>
 
                 <!-- Feature Card 2 -->
-                <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-yellow-100 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-nss-yellow-500 to-nss-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                <div class="group relative w-full md:w-[calc(50%-1rem)] bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-nss-yellow-100 hover:border-nss-yellow-300 transform hover:-translate-y-3 hover:scale-105 overflow-hidden animate-slide-up" style="animation-delay: 0.2s;">
+                    <!-- Animated gradient background -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-nss-yellow-50/50 via-transparent to-nss-green-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <!-- Floating particles effect -->
+                    <div class="absolute top-4 right-4 w-20 h-20 bg-nss-green-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="absolute bottom-4 left-4 w-16 h-16 bg-nss-yellow-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 delay-100"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-nss-yellow-500 via-nss-yellow-600 to-nss-yellow-700 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl group-hover:shadow-nss-yellow-500/50">
+                            <svg class="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-nss-yellow-600 transition-colors duration-300">Real-Time Updates</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">Track progress instantly with status updates, remarks, and timestamps to keep everyone informed and aligned.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Real-Time Updates</h3>
-                    <p class="text-gray-600 leading-relaxed">Track progress instantly with status updates, remarks, and timestamps to keep everyone informed and aligned.</p>
+                    
+                    <!-- Animated corner accent -->
+                    <div class="absolute -top-2 -right-2 w-24 h-24 bg-gradient-to-br from-nss-yellow-400 to-nss-green-400 opacity-0 group-hover:opacity-20 rounded-full blur-xl transition-all duration-500 group-hover:scale-150"></div>
                 </div>
+            </div>
 
+            <!-- Second Row - 3 Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 <!-- Feature Card 3 -->
-                <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-yellow-100 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-nss-yellow-500 to-nss-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
+                <div class="group relative bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-nss-green-100 hover:border-nss-green-300 transform hover:-translate-y-3 hover:scale-105 overflow-hidden animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="absolute inset-0 bg-gradient-to-br from-nss-green-50/50 via-transparent to-nss-yellow-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="absolute top-4 right-4 w-16 h-16 bg-nss-yellow-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-nss-green-500 via-nss-green-600 to-nss-yellow-500 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl group-hover:shadow-nss-green-500/50">
+                            <svg class="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-nss-green-600 transition-colors duration-300">Daily Activity View</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">Get a comprehensive overview of all activities updated on any specific day with summary statistics.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Daily Activity View</h3>
-                    <p class="text-gray-600 leading-relaxed">Get a comprehensive overview of all activities updated on any specific day with summary statistics.</p>
+                    
+                    <div class="absolute -bottom-2 -left-2 w-24 h-24 bg-gradient-to-br from-nss-green-400 to-nss-yellow-400 opacity-0 group-hover:opacity-20 rounded-full blur-xl transition-all duration-500 group-hover:scale-150"></div>
                 </div>
 
                 <!-- Feature Card 4 -->
-                <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-green-100 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-nss-green-500 to-nss-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                        </svg>
+                <div class="group relative bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-nss-yellow-100 hover:border-nss-yellow-300 transform hover:-translate-y-3 hover:scale-105 overflow-hidden animate-slide-up" style="animation-delay: 0.4s;">
+                    <div class="absolute inset-0 bg-gradient-to-br from-nss-yellow-50/50 via-transparent to-nss-green-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="absolute top-4 right-4 w-16 h-16 bg-nss-green-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-nss-yellow-500 via-nss-yellow-600 to-nss-green-500 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl group-hover:shadow-nss-yellow-500/50">
+                            <svg class="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-nss-yellow-600 transition-colors duration-300">Reporting</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">Generate detailed reports with custom date ranges, status filters, and comprehensive activity breakdowns.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Reporting</h3>
-                    <p class="text-gray-600 leading-relaxed">Generate detailed reports with custom date ranges, status filters, and comprehensive activity breakdowns.</p>
+                    
+                    <div class="absolute -bottom-2 -right-2 w-24 h-24 bg-gradient-to-br from-nss-yellow-400 to-nss-green-400 opacity-0 group-hover:opacity-20 rounded-full blur-xl transition-all duration-500 group-hover:scale-150"></div>
                 </div>
 
                 <!-- Feature Card 5 -->
-                <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-yellow-100 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-nss-yellow-500 to-nss-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                        </svg>
+                <div class="group relative bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-nss-green-100 hover:border-nss-green-300 transform hover:-translate-y-3 hover:scale-105 overflow-hidden animate-slide-up md:col-span-2 lg:col-span-1 md:mx-auto md:max-w-md lg:max-w-none" style="animation-delay: 0.5s;">
+                    <div class="absolute inset-0 bg-gradient-to-br from-nss-green-50/50 via-transparent to-nss-yellow-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="absolute top-4 right-4 w-16 h-16 bg-nss-yellow-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-nss-green-500 via-nss-yellow-500 to-nss-green-600 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl group-hover:shadow-nss-green-500/50">
+                            <svg class="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 group-hover:text-nss-green-600 transition-colors duration-300">Secure & Reliable</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">Enterprise-grade security with role-based access control and encrypted data protection.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Secure & Reliable</h3>
-                    <p class="text-gray-600 leading-relaxed">Enterprise-grade security with role-based access control and encrypted data protection.</p>
+                    
+                    <div class="absolute -bottom-2 -right-2 w-24 h-24 bg-gradient-to-br from-nss-green-400 to-nss-yellow-400 opacity-0 group-hover:opacity-20 rounded-full blur-xl transition-all duration-500 group-hover:scale-150"></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slide-up 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 1s ease-out;
+        }
+    </style>
 
     <!-- CTA Section -->
     <div class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20 relative overflow-hidden">
