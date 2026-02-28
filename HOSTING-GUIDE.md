@@ -138,7 +138,7 @@ This guide covers multiple deployment options for your Laravel application, rang
      ```
      APP_ENV=production
      APP_DEBUG=false
-     APP_KEY=base64:... (generate with: php artisan key:generate --show)
+     APP_KEY=base64:NynJ1GlKYIT5EQ0PskEVmubgFwUbyLw786tzwMNDLvc=
      APP_URL=https://your-app.up.railway.app
      
      DB_CONNECTION=mysql

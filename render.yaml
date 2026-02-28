@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: daily-track
+    env: php
+    plan: free  # Change to 'starter' for $7/month (no spin-down)
+    region: oregon  # Change to your preferred region
+    buildCommand: "./render-build.sh"
+    startCommand: "./render-start.sh"
+    envVars:
+      - key: APP_NAME
+        value: Daily~Track
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        generateValue: true
+      - key: LOG_CHANNEL
+        value: errorlog
+      - key: SESSION_DRIVER
+        value: database
+      - key: CACHE_DRIVER
+        value: database
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_PORT
+        value: 5432
+
+databases:
+  - name: daily-track-db
+    plan: free  # Free for 90 days, then $7/month
+    databaseName: dailytrack
+    user: dailytrack
+    region: oregon  # Match your web service region

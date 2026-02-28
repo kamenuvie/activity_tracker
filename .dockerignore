@@ -1,0 +1,16 @@
+node_modules
+vendor
+npm-debug.log
+.env
+.git
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+*.md
+tests
+.editorconfig
+.phpunit.result.cache
+storage/logs/*.log
+.DS_Store
+Thumbs.db
