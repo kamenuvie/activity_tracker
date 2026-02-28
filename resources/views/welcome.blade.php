@@ -315,17 +315,6 @@
                 </div>
 
                 <!-- Feature Card 3 -->
-                <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-green-100 transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-r from-nss-green-500 to-nss-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Team Collaboration</h3>
-                    <p class="text-gray-600 leading-relaxed">Monitor team performance and see who's working on what activities with comprehensive personnel tracking.</p>
-                </div>
-
-                <!-- Feature Card 4 -->
                 <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-yellow-100 transform hover:-translate-y-2">
                     <div class="w-16 h-16 bg-gradient-to-r from-nss-yellow-500 to-nss-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,18 +325,18 @@
                     <p class="text-gray-600 leading-relaxed">Get a comprehensive overview of all activities updated on any specific day with summary statistics.</p>
                 </div>
 
-                <!-- Feature Card 5 -->
+                <!-- Feature Card 4 -->
                 <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-green-100 transform hover:-translate-y-2">
                     <div class="w-16 h-16 bg-gradient-to-r from-nss-green-500 to-nss-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Advanced Reporting</h3>
-                    <p class="text-gray-600 leading-relaxed">Generate detailed reports with custom date ranges, status filters, and personnel breakdowns.</p>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Reporting</h3>
+                    <p class="text-gray-600 leading-relaxed">Generate detailed reports with custom date ranges, status filters, and comprehensive activity breakdowns.</p>
                 </div>
 
-                <!-- Feature Card 6 -->
+                <!-- Feature Card 5 -->
                 <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-nss-yellow-100 transform hover:-translate-y-2">
                     <div class="w-16 h-16 bg-gradient-to-r from-nss-yellow-500 to-nss-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
