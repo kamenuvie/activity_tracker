@@ -30,17 +30,26 @@ COPY . /var/www
 
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction
-RUN npm ci && npm run build
+
+# Install Node dependencies and build assets
+RUN npm install && npm run build
 
 # Set permissions
 RUN chmod -R 755 storage bootstrap/cache
+RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+
+# Create storage directories if they don't exist
+RUN mkdir -p storage/framework/{sessions,views,cache} && \
+    mkdir -p storage/logs && \
+    chmod -R 775 storage bootstrap/cache
 
 # Expose port
-EXPOSE $PORT
+EXPOSE 10000
 
 # Run migrations and start server
-CMD php artisan config:cache && \
-    php artisan route:cache && \
-    php artisan view:cache && \
-    php artisan migrate --force && \
-    php artisan serve --host=0.0.0.0 --port=$PORT
+CMD php artisan storage:link && \
+    php artisan migrate --force --no-interaction && \
+    php artisan config:clear && \
+    php artisan cache:clear && \
+    php artisan view:clear && \
+    php artisan serve --host=0.0.0.0 --port=${PORT:-10000}
